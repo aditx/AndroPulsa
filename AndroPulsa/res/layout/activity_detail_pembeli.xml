@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical" >
+    
+    <TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent" >      
+	    
+        <TextView
+			android:id="@+id/txt_data_pembeli"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingTop="10dp"
+			android:paddingRight="10dp"
+			android:textStyle="bold" />
+	    
+	    <TableRow
+       		android:padding="10dp"
+       		android:layout_width="wrap_content"
+	    	android:layout_height="match_parent" >
+       		<ImageView
+	            android:id="@+id/imgAnonymDetail"
+	            android:contentDescription="@string/str_ic_add"
+	            android:layout_width="100dp"
+	            android:layout_height="100dp" />
+       			
+       			<TableLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_marginLeft="5dp" >
+       			<TableRow
+       			    android:paddingBottom="7dp" >
+		       		<TextView
+			            android:id="@+id/txtteks1"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/str_nm_pembeli"
+			            android:paddingLeft="5dp" />
+		       		
+		       		<TextView
+			            android:id="@+id/txt_nama_pembeli"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:paddingLeft="5dp"
+			            android:textStyle="bold" />
+       		
+        		</TableRow>
+        		
+       			<TableRow
+       			    android:paddingBottom="7dp" >
+		       		<TextView
+			            android:id="@+id/txtteks2"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/str_almt_pembeli"
+			            android:paddingLeft="5dp" />
+		       		
+		       		<TextView
+			            android:id="@+id/txt_almt_pembeli"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:paddingLeft="5dp"
+			            android:textStyle="bold" />
+       		
+        		</TableRow>
+        		
+       			<TableRow
+       			    android:paddingBottom="7dp" >
+		       		<TextView
+			            android:id="@+id/txtteks3"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/str_totalbeli"
+			            android:paddingLeft="5dp" />
+		       		
+		       		<TextView
+			            android:id="@+id/txt_total_pembelian"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/str_totalnominal"
+			            android:paddingLeft="5dp"
+			            android:textStyle="bold" />
+       		
+        		</TableRow>
+        		
+       			<TableRow>
+		       		<TextView
+			            android:id="@+id/txtteks4"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/str_totalpiutang"
+			            android:paddingLeft="5dp" />
+		       		
+		       		<TextView
+			            android:id="@+id/txt_total_piutang"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/str_totalnominal"
+			            android:paddingLeft="5dp"
+			            android:textStyle="bold" />
+       		
+        		</TableRow>
+       		</TableLayout>
+        </TableRow>
+        
+	    <TextView
+			android:id="@+id/txt_data_nomor_pembeli"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingTop="10dp"
+			android:paddingRight="10dp"
+			android:textStyle="bold" />
+	    
+	    <LinearLayout
+		    android:id="@+id/displaynomor"
+		    android:animateLayoutChanges="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="20dp"
+		    android:paddingBottom="10dp"
+		    android:orientation="vertical" >
+       			
+	        <ListView
+				android:id="@+id/list_nomor"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+			</ListView>
+       			
+	    </LinearLayout>
+	    
+	</TableLayout>
+</LinearLayout>

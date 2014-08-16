@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.aditya.andropulsa"
+    android:versionCode="2"
+    android:versionName="2.7.14" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.SEND_SMS" />
+	<uses-permission android:name="android.permission.READ_SMS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_andropulsa"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        <activity
+            android:name="id.aditya.andropulsa.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="RegistrasiActivity" android:label="Registrasi User" android:screenOrientation="portrait"></activity>
+        <activity android:name="ResetPasswordActivity" android:label="Reset Password" android:screenOrientation="portrait"></activity>
+        <activity android:name="HomeActivity" android:label="@string/app_name" android:screenOrientation="portrait"></activity>
+        <activity android:name="HomeListActivity" android:label="@string/app_name" android:screenOrientation="portrait"></activity>
+        <activity android:name="ProfileActivity" android:label="Lihat Profil" android:screenOrientation="portrait"></activity>
+        <activity android:name="PengaturanActivity" android:label="Pengaturan" android:screenOrientation="portrait"></activity>
+        <activity android:name="DistributorActivity" android:label="Data Distributor" android:screenOrientation="portrait"></activity>
+        <activity android:name="DataOperatorActivity" android:label="Data Operator" android:screenOrientation="portrait"></activity>
+        <activity android:name="ListOperatorActivity" android:label="Data Operator" android:screenOrientation="portrait" android:icon="@drawable/ic_data_storage"></activity>
+    	<activity android:name="TransaksiActivity" android:label="Transaksi" android:screenOrientation="portrait" android:icon="@drawable/ic_data_storage"></activity>
+    	<activity android:name="ListPembeliActivity" android:label="Data Pembeli" android:screenOrientation="portrait" android:icon="@drawable/ic_social_group"></activity>
+    	<activity android:name="DataPembeliActivity" android:label="Tambah Data Pembeli" android:screenOrientation="portrait" android:icon="@drawable/ic_data_storage"></activity>
+    	<activity android:name="DetailPembeliActivity" android:label="Lihat Data Pembeli" android:screenOrientation="portrait" android:icon="@drawable/ic_data_storage"></activity>
+    	<activity android:name="DetailDistributorActivity" android:label="Data Distributor" android:screenOrientation="portrait" android:icon="@drawable/ic_data_storage"></activity>
+    	<activity android:name="StatusPembayaranActivity" android:label="Status Pembayaran" android:screenOrientation="portrait" android:icon="@drawable/ic_accept"></activity>
+    	<activity android:name="LaporanActivity" android:label="Laporan Penjualan" android:screenOrientation="portrait" android:icon="@drawable/ic_accept"></activity>
+    	<activity android:name="BroadcastActivity" android:label="SMS Broadcast" android:screenOrientation="portrait" android:icon="@drawable/ic_broadcast_small"></activity>
+    	<activity android:name="BroadcastDetailActivity" android:label="Daftar Kontak" android:screenOrientation="portrait" android:icon="@drawable/ic_broadcast_small"></activity>
+    	<activity android:name="SaldoActivity" android:label="Cek Saldo" android:screenOrientation="portrait" android:icon="@drawable/ic_labels"></activity>
+    	<activity android:name="AboutActivity" android:label="Tentang" android:screenOrientation="portrait" android:icon="@drawable/ic_labels"></activity>
+    	<activity android:name="HelpActivity" android:label="Bantuan" android:screenOrientation="portrait" android:icon="@drawable/ic_labels"></activity>
+    
+    	<receiver android:name="id.aditya.andropulsa.kelas.ClassTerimaSMS">
+            <intent-filter android:priority="9999999">
+               <action 
+                   android:name="android.provider.Telephony.SMS_RECEIVED"
+                   android:theme="@android:style/Theme.Translucent" />
+            </intent-filter>
+        </receiver>
+    	
+    </application>
+
+</manifest>

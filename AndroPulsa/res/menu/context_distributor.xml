@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_hapus"
+        android:orderInCategory="100"
+        android:title="@string/str_hapus"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_discard_white"/>
+</menu>

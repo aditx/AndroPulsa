@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Keterangan
+    	btn = untuk resource Button
+    	txt = untuk resource EditText
+    	str = untuk resource TextView
+     -->
+    
+	<!-- Judul Apps  -->
+    <string name="app_name">AndroPulsa</string>
+    
+    <!-- Activity Main  -->
+    <string name="btn_login">Login Aplikasi</string>
+    <string name="txt_username">Username</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_daftar">Registrasi</string>
+    <string name="txt_reset"> / Lupa Password?</string>
+    
+    <!-- Activity Registrasi  -->
+    <string name="str_nama">Nama :</string>
+    <string name="str_username">Username :</string>
+    <string name="str_password">Password :</string>
+    <string name="str_telpon">Telpon :</string>
+    <string name="str_distributor">Distributor :</string>
+    <string name="str_pin">PIN :</string>
+    <string name="btn_daftar">Registrasi User</string>
+    
+    <!-- Activity Reset Password  -->
+    <string name="str_input1">Masukkan Username</string>
+    <string name="str_input2">untuk dapat melakukan reset password</string>
+    <string name="str_reset">Reset</string>
+    <string name="txt_reset_pass">Username</string>
+    
+    <!-- Activity Home  -->
+	<string name="txt_welcome">Logged in : </string>
+	<string name="txt_nama">nama</string>
+	<string name="str_ic_add">Icon Add</string>
+	<string name="mode_list">Mode Tampilan Baris</string>
+	<string name="mode_grid">Mode Tampilan Kolom</string>
+	
+	<!-- Activity Profile  -->
+	<string name="btn_update">Update Data</string>
+	<string name="btn_add">Tambah Data</string>
+	
+	<!-- Activity Pengaturan  -->
+	<string name="str_set_trans">Transaksi Penjualan</string>
+	<string name="str_jml">Jumlah Pengiriman</string>
+	<string name="str_set_distributor">Data Distributor</string>
+	<string name="str_set_cek_saldo">Cek Saldo Pulsa</string>
+	<string name="str_set_info">Informasi Pengembang</string>
+	<string name="str_set_bonus">Bonus</string>
+	<string name="str_set1">Multiple Transaksi</string>
+	<string name="str_set2">Edit Data Distributor</string>
+	<string name="str_set3">Pengaturan Format SMS</string>
+	<string name="str_set4">Atur Jumlah Pengiriman</string>
+	<string name="str_set5">Versi AndroPulsa</string>
+	<string name="str_set6">Pengaturan Bonus</string>
+	
+	<!-- Activity Distributor  -->
+	<string name="str_nm_distributor">Distributor:</string>
+	<string name="str_alamat">Alamat :</string>
+	<string name="str_telp_distributor">Telpon :</string>
+	<string name="str_sms_center">SMS Center :</string>
+	<string name="str_pin_distributor">PIN :</string>
+	<string name="str_kosong">Data kosong</string>
+	
+	<!-- Activity Data Operator  -->
+	<string name="str_nm_op">Nama Operator :</string>
+	<string name="str_kode_op">Kode :</string>
+	<string name="str_nominal">Nominal :</string>
+	<string name="str_hrg_beli">Harga Beli (Rp.) :</string>
+	<string name="str_hrg_jual">Harga Jual (Rp.) :</string>
+	<string name="btn_tambah_op">Tambah Data</string>
+	<string name="search_hint">Masukkan nama operator</string>
+	<string name="nm_op_hint">ex : Telkomsel</string>
+	<string name="kode_op_hint">ex : I5</string>
+	<string name="nominal_op_hint">ex : 5000 Reg</string>
+	<string name="hrgbeli_op_hint">0000</string>
+	<string name="hrgjual_op_hint">0000</string>
+	<string name="cari">Cari</string>
+	<string name="notfound">Data tidak ditemukan!</string>
+	<string name="kosong">Data masih kosong!</string>
+	
+	<!-- Judul Icon Home  -->
+	<string name="ttl_data_op">Data Operator</string>
+	<string name="ttl_trans">Transaksi Pulsa</string>
+	<string name="ttl_pembeli">Data Pembeli</string>
+	<string name="ttl_status">Status Pembayaran</string>
+	<string name="ttl_laporan">Laporan Penjualan</string>
+	<string name="ttl_broadcast">Broadcast Pesan</string>
+	<string name="ttl_saldo">Cek Saldo Pulsa</string>
+	<string name="ttl_help">Tentang Program</string>
+	
+	<!-- Activity Transaksi  -->
+	<string name="str_id_trans">ID Transaksi : </string>
+	<string name="str_operator">Operator :</string>
+	<string name="str_notujuan">No Tujuan :</string>
+	
+	<!-- Activity Data Pembeli  -->
+	<string name="str_nm_pembeli">Nama : </string>
+	<string name="str_almt_pembeli">Alamat :</string>
+	<string name="str_nopembeli">No Pembeli :</string>
+	<string name="str_addpembeli">Tambah No (+)</string>
+	<string name="str_totalbeli">Total :</string>
+	<string name="str_totalpiutang">Piutang :</string>
+	<string name="str_totalnominal">Rp 0,-</string>
+	<string name="str_hapus">hapus</string>
+	<string name="str_edit">edit</string>
+	<string name="search_hint2">Masukkan nama pembeli</string>
+	
+	<!-- Activity Data Pembeli  -->
+	<string name="str_status">Status :</string>
+	
+	<!-- Activity Laporan  -->
+	<string name="str_tgl_awal">Awal</string>
+	<string name="str_tgl_akhir">Akhir</string>
+	<string name="str_sts">Status</string>
+	<string name="str_jml_jual">Jumlah :</string>
+	<string name="str_untung">Total :</string>
+	
+	<!-- Activity Broadcast  -->
+	<string name="str_pesan">Pesan :</string>
+	<string name="str_penerima">Ke</string>
+	<string name="str_hint_pesan">Tulis pesan</string>
+	
+	<!-- Activity Saldo  -->
+	<string name="str_format">Ketik Format SMS</string>
+	<string name="str_separator">Separator :</string>
+	<string name="str_format_sms">Format SMS :</string>
+	<string name="str_format_pin"> .PIN</string>
+	
+	<!-- Activity About  -->
+	<string name="version">Version 2.7.14</string>
+	<string name="copyright">&#169; 2014 Aditya Putra Indrayanto</string>
+	<string name="allright">All right reserved</string>
+	<string name="help">Bantuan</string>
+	<string name="deposit">Isi Deposit Pulsa</string>
+</resources>

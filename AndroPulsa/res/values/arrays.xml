@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="syncMultiple">
+        <item name="2">2x Transaksi</item>
+        <item name="3">3x Transaksi</item>
+    </string-array>
+    
+    <string-array name="syncMultipleValues">
+        <item name="2">2</item>
+        <item name="3">3</item>
+    </string-array>
+</resources>

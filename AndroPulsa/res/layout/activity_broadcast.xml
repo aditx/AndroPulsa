@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+    
+    <ScrollView
+     	android:id="@+id/scrollView1"
+     	android:layout_width="match_parent"
+     	android:layout_height="0dp"
+     	android:layout_weight="1" >
+    
+	<TableLayout 
+		android:id="@+id/tableLayout1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:orientation="vertical" >
+		
+		<TableRow
+		    android:id="@+id/tableRow1"
+		    android:layout_marginBottom="15dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+		            
+		    <EditText
+				android:id="@+id/edtNo"
+				android:layout_width="270dp"
+				android:hint="@string/str_penerima"
+				android:layout_height="wrap_content"
+				android:textSize="16sp"
+				android:enabled="false"
+				android:textColor="#000000"
+				android:inputType="text" >
+			</EditText>
+				    
+		    <ImageView
+				android:id="@+id/imageAddNumber"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/str_ic_add"
+				android:src="@drawable/ic_content_new_black" />
+		
+		</TableRow>
+		        
+	</TableLayout>			
+			
+	</ScrollView>
+	
+    <!-- footer disini -->
+    <LinearLayout
+        android:id="@+id/footer"
+       	android:gravity="center"
+       	android:paddingLeft="10dp"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="5dp"
+	    android:background="@drawable/border"
+	    android:layout_height="wrap_content"
+       	android:layout_width="fill_parent">
+			    
+        <TableRow
+		    android:id="@+id/tableRow2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+		            
+		    <EditText
+				android:id="@+id/edtPesan"
+				android:layout_width="260dp"
+				android:layout_weight="1"
+				android:hint="@string/str_hint_pesan"
+				android:layout_height="wrap_content"
+				android:inputType="textCapSentences|textMultiLine"
+			    android:maxLength="140"
+			    android:maxLines="3">
+			</EditText>
+				    
+		    <ImageView
+				android:id="@+id/imageKirim"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/str_ic_add"
+				android:src="@drawable/ic_send_now_black" />
+		
+		</TableRow>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/img_bg"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/edittext_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:padding="10dp"
+        android:ems="10"
+        android:textColor="#000000"
+        android:background="@drawable/custom_edt_txt"
+        android:drawableLeft="@drawable/ic_person"
+        android:textCursorDrawable="@null"
+        android:hint="@string/txt_username"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:padding="10dp"
+        android:ems="10"
+        android:textColor="#000000"
+        android:background="@drawable/custom_edt_txt"
+        android:drawableLeft="@drawable/ic_device_access_accounts"
+        android:textCursorDrawable="@null"
+        android:hint="@string/txt_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="#444444"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:shadowRadius="0.6"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="55dp"
+        android:paddingRight="55dp"
+        android:background="@drawable/custom_btn_login"
+        android:text="@string/btn_login" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        
+    <TextView
+        android:id="@+id/textView_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_daftar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="6"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/textView_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_reset"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="6"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+
+</LinearLayout>

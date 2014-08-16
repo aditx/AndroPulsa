@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <TableLayout 
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textViewNmPembeli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp" 
+                android:text="@string/str_nm_pembeli" />
+            
+            <EditText
+		        android:id="@+id/edittxt_nama_pembeli"
+		        android:layout_width="180dp"
+		        android:layout_height="wrap_content"
+		        android:inputType="text" >
+		    </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+                android:id="@+id/textViewAlmtPembeli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp" 
+                android:text="@string/str_almt_pembeli" />
+            
+            <EditText
+		        android:id="@+id/edittxt_almt_pembeli"
+		        android:layout_width="180dp"
+		        android:layout_height="wrap_content"
+		        android:inputType="text" >
+		    </EditText>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+	            android:id="@+id/textViewAddPembeli"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#CCCCCC"
+	            android:text="@string/str_addpembeli" />
+        </TableRow>
+        
+        <LinearLayout
+		    android:id="@+id/content"
+		    android:animateLayoutChanges="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical" >
+        
+		</LinearLayout>
+        
+    </TableLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/str_set_trans" >
+
+       <!-- <SwitchPreference
+            android:id="@+id/cb_notif"
+            android:defaultValue="false"
+            android:key="prefNotif"
+            android:summaryOff="Mati"
+            android:summaryOn="Aktif"
+            android:layout_gravity="right"
+			android:padding="16dip"
+            android:title="@string/str_set1" /> -->
+        
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefCheckBox"
+            android:summaryOff="Mati"
+            android:summaryOn="Aktif"
+            android:title="@string/str_set1" />
+        
+        <ListPreference
+            android:key="prefSyncMultiple"
+            android:entries="@array/syncMultiple"
+            android:entryValues="@array/syncMultipleValues"
+            android:summary="@string/str_jml"
+            android:title="@string/str_set4"
+            android:dependency="prefCheckBox" />
+        
+        <!-- <Preference
+            android:key="tentang_key"
+            android:title="@string/str_set4"
+            android:dependency="multiplePreference"
+            android:summary="@string/str_jml">
+            
+             <intent 
+		        android:action="android.intent.action.VIEW"
+		        android:targetPackage="id.aditya.andropulsa"
+		        android:targetClass="id.aditya.andropulsa.AgenActivity"
+		    /> 
+            
+        </Preference> -->
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/str_set_distributor" >
+        
+        <Preference
+            android:key="agen_key"
+            android:title="@string/str_set2"
+            android:summary="Pengaturan Data Agen">
+            
+            <intent 
+		        android:action="android.intent.action.VIEW"
+		        android:targetPackage="id.aditya.andropulsa"
+		        android:targetClass="id.aditya.andropulsa.DetailDistributorActivity"
+		    />
+            
+        </Preference>
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/str_set_cek_saldo" >
+        
+        <Preference
+            android:key="prefSaldo"
+            android:title="@string/str_set3"
+            android:summary="Masukkan Format Saldo">
+            
+            <intent 
+		        android:action="android.intent.action.VIEW"
+		        android:targetPackage="id.aditya.andropulsa"
+		        android:targetClass="id.aditya.andropulsa.SaldoActivity"
+		    />
+            
+        </Preference>
+        
+       <!-- <EditTextPreference
+        	android:title="@string/str_set3"
+        	android:summary="Masukkan Format Saldo"
+        	android:defaultValue="Ketik S/Sal sesuai distributor"
+        	android:key="prefSaldo"/> -->
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/str_set_bonus" >
+        
+        <EditTextPreference
+        	android:title="@string/str_set6"
+        	android:summary="Masukkan Batas Jumlah Pembelian"
+        	android:defaultValue="100000"
+        	android:key="prefBonus"/>
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/ttl_help" >
+        
+         <Preference
+            android:key="agen_key"
+            android:title="@string/str_set_info"
+            android:summary="Informasi Pengembang dan Penduan">
+        
+	        <intent 
+				android:action="android.intent.action.VIEW"
+			    android:targetPackage="id.aditya.andropulsa"
+			    android:targetClass="id.aditya.andropulsa.AboutActivity"
+			/>
+        
+        </Preference>
+        
+    </PreferenceCategory>
+    
+</PreferenceScreen>

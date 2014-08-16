@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+	
+    <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        	<TextView
+                android:id="@+id/textViewNoPembeli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp" 
+                android:text="@string/str_nopembeli" />
+            
+			<EditText
+				android:id="@+id/edittxt_nama"
+				android:layout_width="165dp"
+				android:layout_height="wrap_content"
+				android:maxLength="14"
+				android:inputType="number" >
+			</EditText>
+			
+			<ImageView
+				android:id="@+id/imageDelNoPembeli"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/str_ic_add"
+				android:src="@drawable/ic_content_remove" />
+			
+			<ImageView
+				android:id="@+id/imageOk"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="gone"
+				android:contentDescription="@string/str_ic_add"
+				android:src="@drawable/ic_accept" />
+	</TableRow>
+
+</LinearLayout>

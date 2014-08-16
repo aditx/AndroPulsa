@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <TableLayout 
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+    	android:layout_marginRight="0dp"
+    	android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp" 
+                android:text="@string/str_id_trans" />
+            
+            <TextView
+                android:id="@+id/textViewidtrans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp" 
+                android:paddingLeft="30dp"
+                android:textStyle="bold"
+                android:textColor="#8B0000"
+                android:text="" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp" 
+                android:text="@string/str_distributor" />
+            
+            <Spinner
+	            android:id="@+id/spinner_distributor_trans"
+	            android:spinnerMode="dropdown"
+	            android:layout_marginLeft="25dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp" 
+                android:text="@string/str_operator" />
+            
+			<Spinner
+	            android:id="@+id/spinner1"
+	            android:spinnerMode="dropdown"
+	            android:layout_marginLeft="25dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+			
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp" 
+                android:text="@string/str_nominal" />
+            
+			<Spinner
+	            android:id="@+id/spinner2"
+	            android:layout_marginLeft="25dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+			
+        </TableRow>
+        
+        <TableLayout
+            android:id="@+id/tl"
+	        android:layout_width="fill_parent"
+        	android:layout_height="wrap_content" >
+    	</TableLayout>
+        
+    </TableLayout>
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#E6E6FA"
+        android:orientation="vertical" >
+
+    <TableRow
+            android:id="@+id/tableRow1"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+		        android:id="@+id/textview_welcome"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/txt_welcome" />
+
+		    <TextView
+		        android:id="@+id/txt_nama"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dp"
+		        android:textStyle="bold"
+		        android:text="@string/txt_nama" />
+            
+        </TableRow>
+
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		    
+		    <ListView
+		       android:id="@+id/list"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content" >
+		    </ListView>
+		
+		</RelativeLayout>
+
+</LinearLayout>
