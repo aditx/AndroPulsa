@@ -119,7 +119,7 @@ public class DsOperator {
 	
 	public Cursor filterOperator(String search, int iduser){
 		//Cursor cr = database.query(true, tb_data_op, allColumns2, nm_op + " LIKE ?" + " AND " + id_user + " LIKE ?", new String[] {"%"+search+"%", "%"+iduser+"%"}, null, null, null, null);
-		String query = "SELECT op.id_op, op.id_user, op.nm_op, op.kode_op, op.hrg_jual, op.hrg_beli, op.nominal, op.id_distributor, tmp.row_id FROM tb_data_op op, tb_view2 tmp WHERE op.id_distributor=tmp._id AND op.nm_op LIKE '%"+ search +"%'";
+		String query = "SELECT op.id_op, op.id_agen, op.nm_op, op.kode_op, op.hrg_jual, op.hrg_beli, op.nominal, op.id_distributor, tmp.row_id FROM tb_data_op op, tb_view2 tmp WHERE op.id_distributor=tmp._id AND op.nm_op LIKE '%"+ search +"%'";
 		Cursor cr = database.rawQuery(query, null);
 		return cr;
 	}
