@@ -38,9 +38,9 @@ public class DsProfile {
 	}
 		
 	public Cursor fetchProfile(int iduser){
-		String selectQuery = "SELECT tb_agen.nm_agen, tb_agen.username, tb_agen.password, tb_agen.telpon, tb_agen.id_agen, tb_user.id_user " +
-								"FROM " + tb_agen + "," + tb_user + " " +
-									"WHERE " + tb_agen + "." + id_agen + " = " + tb_user + "." + id_agen + " AND " + id_user + " = " + iduser + "";
+		String selectQuery = "SELECT tb_agen.nm_agen, tb_agen.username, tb_agen.password, tb_agen.telpon, tb_agen.id_agen " +
+								"FROM " + tb_agen + " " +
+									"WHERE " + id_agen + " = " + iduser + "";
 		Cursor cr = database.rawQuery(selectQuery, null);
 		if(cr != null){
 			cr.moveToFirst();
